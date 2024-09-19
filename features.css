@@ -1,0 +1,200 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: black;
+}
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(241, 241, 241, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #ad0100;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navbar .logo img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    margin-right: 2px; /* Space between image and text */
+   
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    color: #ad0100;
+    border-bottom: 2px solid ;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+}
+a {
+    text-decoration: none;
+        color: #333;
+}
+/* Footer Section */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .contact__title{
+    font-size: 2rem;
+}
+.footer .contact__details {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+.cpy {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #555;
+}
+.footer a{
+    color: #fff;
+}
+
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.footer .social-links a {
+    color: white;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #ad0100;
+}
+/*table*/
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 230px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    border: 2px solid black;
+}
+
+td {
+    padding: 9px;
+    text-align: center;
+    
+} 
+
+ .highlight {
+    font-weight: bold;
+    color: #ad0100;
+}
+.comparison_section{
+    margin-top: 90px;
+
+}
+.heading{
+    text-align: centre;
+    color: #ad0100;
+    text-shadow: 0.3px 0.3px 0 #000, 
+                 -0.3px 0.3px 0 #000, 
+                 0.3px -0.3px 0 #000, 
+                 -0.3px -0.3px 0 #000;
+    font-size: 25px;
+    border: 2px solid black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+/* Bold the first column */
+td:first-child {
+    font-weight: bold;
+    width: 200px;
+}
+td:nth-child(2){
+    width: 200px;
+}
+
+td:nth-child(3){
+    width: 200px;
+}
+
+/* Alternate row background colors */
+tbody tr:nth-child(odd) {
+    background-color: rgb(173, 1, 0,0.7);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+    color: #333;
+}
+html{
+    scroll-behavior: smooth;
+}

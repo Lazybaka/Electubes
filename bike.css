@@ -1,0 +1,361 @@
+/* Bike Details Wrapper */
+.bike-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 30px; /* Space between the image gallery and the details section */
+    margin-top: 50px;
+}
+
+/* Image Gallery */
+/* Image Gallery Wrapper */
+.image-gallery {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the thumbnail images and the large image */
+}
+
+/* Thumbnail Images Container (Left Side) */
+.thumbnail-images {
+    display: flex;
+    flex-direction: column; /* Align thumbnails vertically */
+    gap: 10px; /* Space between thumbnails */
+    justify-content: center; /* Vertically center the thumbnails */
+    
+}
+
+.thumbnail-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 0.2px solid black;
+}
+
+.thumbnail-images img:hover {
+    transform: scale(1.1);
+    border : 0.8px solid #ad0100;
+}
+
+/* Large Image Container (Fixed Size) */
+.large-image {
+    width: 500px;  /* Set a fixed width */
+    height: 500px; /* Set a fixed height */
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid #ad0100;
+}
+
+.large-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the container */
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* Bike Details (Right Side) */
+.bike-details {
+    width: 100%; /* Adjust as necessary */
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.bike-details h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.bike-details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;    
+    margin-top: 15px;
+}
+
+.bike-details h2{
+    color: #ad0100;
+    text-shadow: 0.3px 0.3px 0 #000, 
+                 -0.3px 0.3px 0 #000, 
+                 0.3px -0.3px 0 #000, 
+                 -0.3px -0.3px 0 #000;
+}
+.bike-details .btn {
+    display: inline-block;
+    background-color: #ad0100;
+    color: white;
+    padding: 7px  12px;
+    margin-top: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight:light;
+}
+
+.bike-details .btn:hover {
+    background-color: #d22b2b;
+    transform: scale(0.9);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .contact__title{
+    font-size: 2rem;
+}
+.footer .contact__details {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+.cpy {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #555;
+}
+.footer a{
+    color: #fff;
+}
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.footer .social-links a {
+    color: white;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #ad0100;
+}
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: black;
+}
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(241, 241, 241, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #ad0100;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navbar .logo img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    margin-right: 2px; /* Space between image and text */
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    color: #ad0100;
+    border-bottom: 2px solid ;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+}
+a {
+    text-decoration: none;
+        color: #333;
+}
+/*table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 9px;
+    text-align: left;
+    
+} 
+
+ .highlight {
+    font-weight: bold;
+    color: #ad0100;
+}
+.specs{
+    color: #ad0100;
+    font-weight: bold;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+/* Optional styling for the "See more" link */
+.see-more {
+    color: #007185;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: underline;
+}
+.see-more:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.more-specs {
+    display: none; /* Default to hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease, height 0.3s ease;
+    overflow: hidden;
+}
+
+.more-specs.show {
+    display: table-row-group; /* Or table-row for individual rows */
+    opacity: 1;
+    height: auto; /* Adjust height if needed */
+}
+/*pricing*/
+.pricing {
+    background-color: whitesmoke;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing__container {
+    overflow-x: auto;
+    padding: 1rem;
+    width: 100%; /* Ensure container takes full width */
+    display: flex;
+    justify-content: center; /* Center table within container */
+  }
+  
+  .pricing__table {
+    width: 55vw; /* Table width set to 55% of viewport width */
+    border-collapse: collapse;
+    background-color: var(--body-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .pricing__table th,
+  .pricing__table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--container-color);
+  }
+  
+  .pricing__table td:nth-child(2) {
+    text-align: center; /* Centers the text in the right column */
+  }
+  
+  .pricing__table th {
+    font-weight: bold;
+  }
+  
+  .pricing__table tr:hover {
+    background-color: var(--container-color-light);
+  }
+  
+  .pricing__table b {
+    color: #ad0100;
+  }
+  
+  .pricing__table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .specs {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+}  
+  
+.price{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ad0100;
+  }

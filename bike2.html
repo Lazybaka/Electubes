@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERB 250-XG</title>
+    <link rel="stylesheet" href="bike.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4dc0e9fd57.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./Logopit_1725713605067 (1).png">
+</head>
+<body>
+     <!-- Navbar Section -->
+     <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+        <a href="./index.html#home" aria-label="Go to home page">
+            <div class="logo">    
+                    <img src="./Logopit_1725713605067 (1).png" alt="ELECTUBE Logo" class="logo-image">
+                 <p>ELECTUBES</p>
+            </div></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#bikes">Our Bikes</a></li>
+            <li><a href="features.html" aria-label="Contact Us Section">Features</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            </ul>
+    </nav>
+
+   <!-- Bike Details Section -->
+<div class="bike-details-wrapper">
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+        <!-- Thumbnail Images (Left Side) -->
+        <div class="thumbnail-images">
+            <img src="./img1.jpg" alt="Thumb 1" onmouseover="changeImage('./img1.jpg')">
+            <img src="./img2.jpg" alt="Thumb 2" onmouseover="changeImage('./img2.jpg')">
+            <img src="./img3.jpg" alt="Thumb 3" onmouseover="changeImage('./img3.jpg')">
+            <img src="./img5-Photoroom.jpg" alt="Thumb 4" onmouseover="changeImage('./img5-Photoroom.jpg')">
+        </div>
+        <!-- Large Image (Right Side) -->
+        <div class="large-image">
+            <img id="mainImage" src="./main.jpg" alt="Large Image">
+        </div>
+    </div>
+    
+
+    <!-- Bike Details Section (Right-Side) -->
+    <div class="bike-details">
+        <h2>ERB 250-XG</h2>
+        <p>The ultimate electric motorcycle for urban mobility. Designed with speed, efficiency, and safety in mind.</p>
+        <p><b>Starting at ₹88,900</b></p>
+        <a href="#price" class="btn">Click here for detailed prices...</a>
+        <h3 class="specs">SPECIFICATIONS</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="highlight">Max Power</td>
+                    <td>250w</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Speed</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Range</td>
+                    <td>90-100 kmpc "60v/2.1 KwH with Lithium batt. Indian ( I- Power)"</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Climbing</td>
+                    <td>15 Degree</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Brake System</td>
+                    <td>FR - Drum (Indian) <br> RR - Drum (Indian)</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Seat Height</td>
+                    <td>800 Mm</td>
+                </tr>
+            </tbody>
+    
+            <!-- Hidden rows -->
+            <tbody class="more-specs">
+                
+                <tr>
+                    <td class="highlight">Dimension</td>
+                    <td>1970/745/1165</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Loading Capacity</td>
+                    <td>160 Kg</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Tyre</td>
+                    <td>18" Inch Tube Tyre</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Speedometer</td>
+                    <td>Digital</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Controller</td>
+                    <td>15 Tube 30-35 Triple Channel (Imported)</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Charging Time</td>
+                    <td>3.5 hrs - 4.5 hrs</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Charger</td>
+                    <td>Micro Charger With Auto Cut 2-5 AMPS</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Ground Suspension</td>
+                    <td>210mm</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Suspension</td>
+                    <td>Front - Hydrolic Telescopic (Gabriel), Rear-Double Shocker With Oil Based (Spring)</td>
+                </tr>
+            </tbody>
+    
+            <!-- See more/less link after all content -->
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <span class="see-more" onclick="toggleSpecs()">Show more</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="pricing" id="price">
+    <h3 class="price">BIKE PRICING</h3>
+    <div class="pricing__container">
+        <table class="pricing__table">
+            <tbody>
+                <tr>
+                    <td><b>Ex Factory Price</b></td>
+                    <td>₹ 78900</td>
+                </tr>
+                <tr>
+                    <td><b>Price</b></td>
+                    <td>₹ 78900 <br>20-40 Qty</td>
+                </tr>
+                <tr>
+                    <td><b>Dealer Price</b></td>
+                    <td>₹ 81400 <br>05-19 Qty</td>
+                </tr>
+                <tr>
+                    <td><b>Distributer Retail Price</b></td>
+                    <td>₹ 88900 <br>For single pc</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+ <!-- Footer Section -->
+ <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-contact">
+            <h3 class="contact__title">Get in Touch</h3>
+            <p class="contact__text">If you have any questions, feel free to reach out:</p>
+            <div class="contact__details">
+                <i class="fa-solid fa-phone"> </i>
+                <span>   +91 88307 02064 , +91 76786 76254</span>
+            </div>
+            <div class="contact__details">
+                <i class="fa-solid fa-envelope"> </i>
+                <span><a href="mailto:contact.electubes@gmail.com">contact.electubes@gmail.com </a></span>
+            </div>
+            <div class="contact__details">
+                <i class="fa-solid fa-location-dot"> </i>
+                <span>Shivpuri part 1, Deenpur, Najafgarh, New Delhi, 110043</span>
+            </div>
+        </div>
+        <div class="footer-right" id="contact">
+            
+            <h1 class="contact__title">Follow Us</h1>
+            
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/people/Electubes-Motor/pfbid0gq7V2nnQ7Bqt8Z6geHcsFtSRoWnyfSb5wZYBcAkpF6q9Aj6y1BdQmgFjPm5zopuQl/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/electubes-motors-388b74284/?originalSubdomain=in" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <p class="cpy">&copy; 2024 ELECTUBES. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script src="bike.js"></script>
+</body>
+</html>
